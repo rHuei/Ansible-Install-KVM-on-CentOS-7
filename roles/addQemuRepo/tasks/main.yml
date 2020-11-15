@@ -1,0 +1,5 @@
+---
+- name: Add Qemu-ev Repository
+  package:
+    name: centos-release-qemu-ev
+    state: present

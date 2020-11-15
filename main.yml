@@ -1,0 +1,13 @@
+---
+    - name: Install KVM
+      hosts: deploy
+      remote_user: root
+      vars:
+        ansible_ssh_private_key_file: /Users/josewang/.ssh/id_rsa
+        
+
+      roles:
+        #- checkVirtualization
+        - addQemuRepo
+        - installKVM
+
